@@ -244,6 +244,43 @@ Restore the focus styles unset by the previous rule.
   outline: 1px dotted ButtonText;
 }
 
+.gallery {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.gallery-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-item.active {
+  opacity: 1;
+}
+
+.gallery-controls {
+  margin-top: 1rem;
+}
+
+.gallery-prev,
+.gallery-next {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+
+
 /**
 Remove the additional ':invalid' styles in Firefox.
 See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
@@ -22906,7 +22943,7 @@ video {
 
 .text-6xl {
   font-size: 3.75rem;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .text-7xl {
@@ -23074,7 +23111,7 @@ video {
 }
 
 .leading-normal {
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .leading-relaxed {
@@ -55389,7 +55426,7 @@ video {
 
   .sm\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
+    line-height: 1.1;
   }
 
   .sm\:text-7xl {
@@ -87500,7 +87537,7 @@ video {
 
   .md\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
+    line-height: 1.1;
   }
 
   .md\:text-7xl {
@@ -119611,7 +119648,7 @@ video {
 
   .lg\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
+    line-height: 1.1;
   }
 
   .lg\:text-7xl {
@@ -151722,7 +151759,7 @@ video {
 
   .xl\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
+    line-height: 1.1;
   }
 
   .xl\:text-7xl {
@@ -183833,7 +183870,7 @@ video {
 
   .\32xl\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
+    line-height: 1.1;
   }
 
   .\32xl\:text-7xl {
