@@ -244,40 +244,6 @@ Restore the focus styles unset by the previous rule.
   outline: 1px dotted ButtonText;
 }
 
-.gallery {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.gallery-container {
-  display: flex;
-  overflow: hidden;
-}
-
-.gallery-item {
-  flex: 0 0 100%;
-  max-width: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.gallery-item.active {
-  opacity: 1;
-}
-
-.gallery-controls {
-  margin-top: 1rem;
-}
-
-.gallery-prev,
-.gallery-next {
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-  background-color: #ccc;
-  border: none;
-  cursor: pointer;
-}
 
 
 
